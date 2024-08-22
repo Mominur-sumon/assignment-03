@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
-        <!-- Google font CDN -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <!-- DaisyUI and tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -22,6 +22,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        arrow_bg : 'rgb(171, 239, 95)',
                     },
                     fontFamily: {
                         'manrope': ['Manrope', 'sans-serif']
@@ -35,7 +36,45 @@
 <body class="font-manrope">
     <!-- Header Section -->
     <header class="md:container md:mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start space-x-3">
+                <h3><i class="fa-solid fa-arrow-right text-xl bg-arrow_bg rounded-full -rotate-45 h-10 w-10 flex items-center justify-center p-2"></i></h3>
+                <h3 class=" text-3xl font-bold ">Rinterio</h3>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 justify-center items-center">
+                    <li><a class="text-xl font-semibold hover:font-semibold transition-colors duration-300 ease-in-out">Home</a></li>
+                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Services</a></li>
+                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Portfolio</a></li>
+                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Blog</a></li>
+                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class=" hidden md:flex justify-center items-center  space-x-4">
 
+                    <a href="#"><i class="fa-solid fa-magnifying-glass p-3 bg-white rounded-full border "></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping p-3 bg-white rounded-full border "></i></a>
+
+                    <a class="btn bg-arrow_bg rounded-full text-xl hover:bg-green-500 font-semibold">Book Consult <span><i class="fa-solid fa-arrow-right text-lg bg-black text-white rounded-full -rotate-45 h-10 w-10 flex items-center justify-center"></i></a>
+
+                </div>
+
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                    <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-2">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- Main Section -->
     <main>
