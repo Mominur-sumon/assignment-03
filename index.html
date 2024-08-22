@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,11 @@
                         clifford: '#da373d',
                         arrow_bg: 'rgb(171, 239, 95)',
                         arrowbg1: 'rgba(171, 239, 95, 0.5)',
-                        aboutUS: 'rgba(30, 30, 30,0.05)'
+                        aboutUS: 'rgba(30, 30, 30,0.05)',
+                        concept: 'rgb(231, 193, 211)',
+                        designbg: 'rgb(239, 218, 110)',
+                        supervisionbg: 'rgb(164, 218, 195)',
+                        budget: 'rgb(119, 170, 234)'
                     },
                     fontFamily: {
                         'manrope': ['Manrope', 'sans-serif']
@@ -185,6 +189,39 @@
             </div>
         </div>
          </section>
+
+         <!-- Work Process Section -->
+          <section class="py-10 bg-aboutUS px-12">
+            <div class="space-y-4">
+                <button
+                    class="bg-white px-5 py-2 w-50 mx-auto rounded-full font-bold text-xl flex gap-3 justify-center items-center lg:mt-10 "><i
+                        class="fa-solid fa-arrow-right "></i>How we works</button>
+                <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold text-center">Our Works Process</h2>  
+                <p class="opacity-90 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>      
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-5 ">
+                <div class="p-10 bg-designbg rounded-xl space-y-2">
+                    <img src="assets/concept.png" alt="concept">
+                    <h4 class="text-xl font-bold">Design Process</h4>
+                    <p class="opacity-90">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="p-10 bg-concept rounded-xl space-y-2">
+                    <img src="assets/flow-chart.png" alt="Flowchat">
+                    <h4 class="text-xl font-bold">Concept</h4>
+                    <p class="opacity-90">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="p-10 bg-supervisionbg rounded-xl space-y-2">
+                    <img src="assets/vision.png" alt="vission">
+                    <h4 class="text-xl font-bold">Supervision</h4>
+                    <p class="opacity-90">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="p-10 bg-budget rounded-xl space-y-2">
+                    <img src="assets/budget-planning.png" alt="concept">
+                    <h4 class="text-xl font-bold">Budget Planing</h4>
+                    <p class="opacity-90">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+          </section>
 
     </main>
     <!-- Footer Section -->
