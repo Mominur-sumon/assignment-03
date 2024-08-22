@@ -22,8 +22,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        arrow_bg : 'rgb(171, 239, 95)',
+                        arrow_bg: 'rgb(171, 239, 95)',
                         arrowbg1: 'rgba(171, 239, 95, 0.5)',
+                        aboutUS: 'rgba(30, 30, 30,0.05)'
                     },
                     fontFamily: {
                         'manrope': ['Manrope', 'sans-serif']
@@ -39,16 +40,26 @@
     <header class="md:container md:mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start space-x-3">
-                <h3><i class="fa-solid fa-arrow-right text-xl bg-arrow_bg rounded-full -rotate-45 h-10 w-10 flex items-center justify-center p-2"></i></h3>
+                <h3><i
+                        class="fa-solid fa-arrow-right text-xl bg-arrow_bg rounded-full -rotate-45 h-10 w-10 flex items-center justify-center p-2"></i>
+                </h3>
                 <h3 class=" text-3xl font-bold ">Rinterio</h3>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 justify-center items-center">
-                    <li><a class="text-xl font-semibold hover:font-semibold transition-colors duration-300 ease-in-out">Home</a></li>
-                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Services</a></li>
-                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Portfolio</a></li>
-                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Blog</a></li>
-                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Contact Us</a></li>
+                    <li><a
+                            class="text-xl font-semibold hover:font-semibold transition-colors duration-300 ease-in-out">Home</a>
+                    </li>
+                    <li><a
+                            class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Services</a>
+                    </li>
+                    <li><a
+                            class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Portfolio</a>
+                    </li>
+                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Blog</a>
+                    </li>
+                    <li><a class="opacity-90 hover:font-semibold transition-colors duration-300 ease-in-out ">Contact
+                            Us</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
@@ -57,7 +68,9 @@
                     <a href="#"><i class="fa-solid fa-magnifying-glass p-3 bg-white rounded-full border "></i></a>
                     <a href=""><i class="fa-solid fa-cart-shopping p-3 bg-white rounded-full border "></i></a>
 
-                    <a class="btn bg-arrow_bg rounded-full text-xl hover:bg-green-500 font-semibold">Book Consult <span><i class="fa-solid fa-arrow-right text-lg bg-black text-white rounded-full -rotate-45 h-8 w-8 flex items-center justify-center"></i></a>
+                    <a class="btn bg-arrow_bg rounded-full text-xl hover:bg-green-500 font-semibold">Book Consult
+                        <span><i
+                                class="fa-solid fa-arrow-right text-lg bg-black text-white rounded-full -rotate-45 h-8 w-8 flex items-center justify-center"></i></a>
 
                 </div>
 
@@ -66,7 +79,7 @@
                         <a href="#"><i class="fa-solid fa-bars"></i></a>
                     </div>
                     <ul tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-2">
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-2">
                         <li><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
@@ -78,19 +91,75 @@
         </div>
     </header>
     <!-- Main Section -->
-    <main>
+    <main class="container mx-auto">
         <!-- Banner Section -->
-         <section class="container mx-auto my-10 flex flex-col justify-center items-center space-y-3">
+        <section class="container mx-auto my-10 flex flex-col justify-center items-center space-y-3">
             <div>
                 <img src="assets/banner.png" alt="Banner Image">
             </div>
             <div class="text-center space-y-5">
-                <h2 class="text-xl md:text-4xl lg:text-6xl font-bold">A barn house of this design has a striking appearance</h2>
-            <p class="text-sm md:text-lg w-11/12  md:w-9/12 opacity-90 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <h2 class="text-xl md:text-4xl lg:text-6xl font-bold">A barn house of this design has a striking
+                    appearance</h2>
+                <p class="text-sm md:text-lg w-11/12  md:w-9/12 opacity-90 mx-auto">The barn house captivates with its
+                    blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and
+                    large windows that flood the space with natural light.</p>
             </div>
-            <button class="w-9/12 md:w-56 bg-arrowbg1 px-5 py-2 rounded-full font-bold text-xl flex gap-3 justify-center mt-5">View Details <span><i class="fa-solid fa-arrow-right text-lg bg-arrow_bg rounded-full -rotate-45 h-8 w-8 flex items-center justify-center"></i></button>
-         </section>
-    
+            <button
+                class="w-9/12 md:w-56 bg-arrowbg1 px-5 py-2 rounded-full font-bold text-xl flex gap-3 justify-center mt-5">View
+                Details <span><i
+                        class="fa-solid fa-arrow-right text-lg bg-arrow_bg rounded-full -rotate-45 h-8 w-8 flex items-center justify-center"></i></button>
+        </section>
+
+        <!-- About us section -->
+        <section class="container py-10 bg-aboutUS relative ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 space-y-3 ">
+                <div class="px-12 space-y-6 ">
+                    <div class="space-y-4">
+                        <button
+                            class="bg-white px-5 py-2 w-40 mx-auto lg:ml-0 rounded-full font-bold text-xl flex gap-3 justify-center items-center lg:mt-10 "><i
+                                class="fa-solid fa-arrow-right "></i>About us</button>
+                        <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold text-center lg:text-left">We design thoughtful, liveable spaces</h2>  
+                        <p class="opacity-90 text-center lg:text-left">The barn house captivates with its blend of rustic charm and 
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>      
+                    </div>
+                    <div class="space-y-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2">
+                        <!-- Card 1 -->
+                        <div class="card card-side bg-base-100 shadow-xl px-4 lg:px-10">
+                            <figure>
+                              <img
+                                src="assets/commercial.png"
+                                alt="" />
+                            </figure>
+                            <div class="card-body">
+                              <h2 class="card-title">Commercial</h2>
+                              <p class="opacity-90">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                          <!-- Card 2 -->
+                          <div class="card card-side bg-base-100 shadow-xl px-4 lg:px-10">
+                            <figure>
+                              <img
+                                src="assets/residential.png"
+                                alt="" />
+                            </figure>
+                            <div class="card-body">
+                              <h2 class="card-title">Residential</h2>
+                              <p class="opacity-90">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="hidden lg:block absolute left-7 top-5">
+                        <img src="assets/Vector.png" alt="vector">
+                    </div>
+                </div>
+                <!-- img div -->
+                <div class="flex justify-center items-center">
+                    <img src="assets/Rectangle.png" alt="Rectangle">
+                </div>
+            </div>
+
+        </section>
+
     </main>
     <!-- Footer Section -->
     <footer>
