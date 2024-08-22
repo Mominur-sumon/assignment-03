@@ -23,6 +23,7 @@
                     colors: {
                         clifford: '#da373d',
                         arrow_bg : 'rgb(171, 239, 95)',
+                        arrowbg1: 'rgba(171, 239, 95, 0.5)',
                     },
                     fontFamily: {
                         'manrope': ['Manrope', 'sans-serif']
@@ -56,7 +57,7 @@
                     <a href="#"><i class="fa-solid fa-magnifying-glass p-3 bg-white rounded-full border "></i></a>
                     <a href=""><i class="fa-solid fa-cart-shopping p-3 bg-white rounded-full border "></i></a>
 
-                    <a class="btn bg-arrow_bg rounded-full text-xl hover:bg-green-500 font-semibold">Book Consult <span><i class="fa-solid fa-arrow-right text-lg bg-black text-white rounded-full -rotate-45 h-10 w-10 flex items-center justify-center"></i></a>
+                    <a class="btn bg-arrow_bg rounded-full text-xl hover:bg-green-500 font-semibold">Book Consult <span><i class="fa-solid fa-arrow-right text-lg bg-black text-white rounded-full -rotate-45 h-8 w-8 flex items-center justify-center"></i></a>
 
                 </div>
 
@@ -78,7 +79,18 @@
     </header>
     <!-- Main Section -->
     <main>
-
+        <!-- Banner Section -->
+         <section class="container mx-auto my-10 flex flex-col justify-center items-center space-y-3">
+            <div>
+                <img src="assets/banner.png" alt="Banner Image">
+            </div>
+            <div class="text-center space-y-5">
+                <h2 class="text-xl md:text-4xl lg:text-6xl font-bold">A barn house of this design has a striking appearance</h2>
+            <p class="text-sm md:text-lg w-11/12  md:w-9/12 opacity-90 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <button class="w-9/12 md:w-56 bg-arrowbg1 px-5 py-2 rounded-full font-bold text-xl flex gap-3 justify-center mt-5">View Details <span><i class="fa-solid fa-arrow-right text-lg bg-arrow_bg rounded-full -rotate-45 h-8 w-8 flex items-center justify-center"></i></button>
+         </section>
+    
     </main>
     <!-- Footer Section -->
     <footer>
